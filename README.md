@@ -22,9 +22,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] Added dark mode
-* [ ] Added party size configuration
-* [ ] Added default tip percentage configuration
+* [ ] Add support for dark mode
+* [ ] Add support party size configuration and resetting
+* [ ] Add support for default tip percentage configuration
+* [x] Add support for resetting all fields and labels
 
 ## Video Walkthrough
 
