@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC53A87225A20ED6008482E1 /* SetttingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A87125A20ED6008482E1 /* SetttingsViewController.swift */; };
 		DC9C2A6225A1D598005B8432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C2A6125A1D598005B8432 /* AppDelegate.swift */; };
 		DC9C2A6425A1D598005B8432 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C2A6325A1D598005B8432 /* SceneDelegate.swift */; };
 		DC9C2A6625A1D598005B8432 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C2A6525A1D598005B8432 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC53A87125A20ED6008482E1 /* SetttingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingsViewController.swift; sourceTree = "<group>"; };
 		DC9C2A5E25A1D597005B8432 /* Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9C2A6125A1D598005B8432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC9C2A6325A1D598005B8432 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DC9C2A6325A1D598005B8432 /* SceneDelegate.swift */,
 				DC9C2A6525A1D598005B8432 /* ViewController.swift */,
 				DC9C2A6725A1D598005B8432 /* Main.storyboard */,
+				DC53A87125A20ED6008482E1 /* SetttingsViewController.swift */,
 				DC9C2A6A25A1D599005B8432 /* Assets.xcassets */,
 				DC9C2A6C25A1D599005B8432 /* LaunchScreen.storyboard */,
 				DC9C2A6F25A1D599005B8432 /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC53A87225A20ED6008482E1 /* SetttingsViewController.swift in Sources */,
 				DC9C2A6625A1D598005B8432 /* ViewController.swift in Sources */,
 				DC9C2A6225A1D598005B8432 /* AppDelegate.swift in Sources */,
 				DC9C2A6425A1D598005B8432 /* SceneDelegate.swift in Sources */,

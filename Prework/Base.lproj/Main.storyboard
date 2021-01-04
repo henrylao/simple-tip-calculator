@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="psP-Nm-bHy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tip View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="View Controller" customClass="ViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="Tip View Controller" customClass="ViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YNE-z4-Ge2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +77,13 @@
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="rgJ-MV-CRs"/>
                                 </connections>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAp-Ne-SZY">
+                                <rect key="frame" x="0.0" y="14" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" largeTitleDisplayMode="never" id="tXc-k3-e3c"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TOi-Ox-hVK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,7 +92,16 @@
                             <outletCollection property="gestureRecognizers" destination="I45-9v-hTt" appends="YES" id="yY4-ar-7he"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="gEP-Fs-TkA"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="gEP-Fs-TkA">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="0bG-FH-3OX">
+                            <connections>
+                                <action selector="onTapSettings:" destination="BYZ-38-t0r" id="LOt-8y-w20"/>
+                                <segue destination="VsW-3C-Yy6" kind="show" id="dVs-6Y-hHK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="billField" destination="58x-YP-iMJ" id="hYx-7t-qan"/>
                         <outlet property="tipControl" destination="mCu-BS-cug" id="9t4-Ao-nto"/>
@@ -119,6 +135,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLR-Yr-QXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="107.8125"/>
+        </scene>
+        <!--Setttings View Controller-->
+        <scene sceneID="lY8-TS-lfS">
+            <objects>
+                <viewController id="VsW-3C-Yy6" customClass="SetttingsViewController" customModule="Prework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wOg-WE-Lfy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="C3k-r5-07e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="glw-us-8Zq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Il1-W7-1Mn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="194" y="-565"/>
         </scene>
     </scenes>
     <resources>

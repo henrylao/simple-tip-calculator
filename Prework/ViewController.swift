@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
     
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
         print("Hello")
         view.endEditing(true);
         
+        // Set title in the navigation bar
+        self.title = "Tip Calculator"
     }
     
     
