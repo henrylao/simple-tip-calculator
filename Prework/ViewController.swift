@@ -16,6 +16,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIBarButtonItem!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet weak var partySizeStepper: UIStepper!
+    @IBOutlet weak var partySizeLabel: UILabel!
+    var partySize: Int = 0
+    
+    @IBAction func partySizeChanged(_ sender: UIStepper) {
+        print("Stepper clicked")
+        print(sender.value)
+        partySizeLabel.text = String(Int(sender.value))
+
+    }
+    @IBAction func resetPartySize(_ sender: Any) {
+        print("Reset clicked")
+        partySizeStepper.value = 0
+        partySizeLabel.text = String(Int(partySizeStepper.value))
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

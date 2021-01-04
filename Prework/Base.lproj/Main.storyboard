@@ -84,6 +84,35 @@
                                     <navigationItem title="Title" largeTitleDisplayMode="never" id="tXc-k3-e3c"/>
                                 </items>
                             </navigationBar>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="oln-uE-Sgn" userLabel="Party Size Stepper">
+                                <rect key="frame" x="128" y="397" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="partySizeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="efz-mg-4gM"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CA-0H-aDL" userLabel="Party SIze">
+                                <rect key="frame" x="343" y="402" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Party Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0id-5X-ZLD" userLabel="Party Size Label">
+                                <rect key="frame" x="20" y="402" width="77" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQm-fV-be4">
+                                <rect key="frame" x="274" y="397" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPartySize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4G-7x-1cB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TOi-Ox-hVK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -104,6 +133,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="billField" destination="58x-YP-iMJ" id="hYx-7t-qan"/>
+                        <outlet property="partySizeLabel" destination="6CA-0H-aDL" id="5P6-cE-4pg"/>
+                        <outlet property="partySizeStepper" destination="oln-uE-Sgn" id="frK-BM-2Cj"/>
                         <outlet property="tipControl" destination="mCu-BS-cug" id="9t4-Ao-nto"/>
                         <outlet property="tipLabel" destination="RJY-it-qSb" id="Uod-oy-gGj"/>
                         <outlet property="totalLabel" destination="5La-kg-V3a" id="slJ-em-dF9"/>
