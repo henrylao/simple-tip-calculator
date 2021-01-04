@@ -37,7 +37,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Attention to detail is important. I did not note the editting of the specifically Main.storyboard and instead was editting the LaunchScreen.storyboard and ended up spending alot more time than necessary troubleshooting an issue that could have been easily avoied. 
+* Attention to detail is important. I did not note the editting of the specifically Main.storyboard and instead was editting the LaunchScreen.storyboard and ended up spending alot more time than necessary troubleshooting an issue that could have been easily avoied. 
+
 
 ## License
 
