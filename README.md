@@ -22,7 +22,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+* [ ] Added dark mode
+* [ ] Added party size configuration
+* [ ] Added default tip percentage configuration
 
 ## Video Walkthrough
 
