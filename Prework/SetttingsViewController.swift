@@ -9,13 +9,20 @@ import UIKit
 
 class SetttingsViewController: UIViewController {
 
+    @IBOutlet weak var darkModeSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Tip Calculator"
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func onToggleDarkMode(_ sender: Any) {
+        print("Toggled dark mode switch")
+        print("Dark Mode On:", darkModeSwitch.isOn)
+    }
+    
     /*
     // MARK: - Navigation
 
