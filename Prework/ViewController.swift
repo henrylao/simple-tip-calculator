@@ -18,17 +18,33 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var partySizeStepper: UIStepper!
     @IBOutlet weak var partySizeLabel: UILabel!
-    var partySize: Int = 0
-    
-    @IBAction func partySizeChanged(_ sender: UIStepper) {
-        print("Stepper clicked")
-        print(sender.value)
-        partySizeLabel.text = String(Int(sender.value))
 
+
+    @IBOutlet weak var tipSplitLabel: UILabel!
+    
+
+    @IBAction func resetAllFields(_ sender: Any) {
+        resetPartySize(sender);
+        billField.text = String(format: "%.2f", 0.00)
+        let bill = Double(0)
+        let tip = Double(0)
+        let total = bill + tip
+        let partySize = Double(partySizeLabel.text!) ?? 0
+        let tipSplit: Double = tip  / partySize
+
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
+//        totalLabel.text = "$\(total)"
+        tipSplitLabel.text = String(format: "$%.2f", tipSplit)
+        
     }
+    
+    
+    
     @IBAction func resetPartySize(_ sender: Any) {
         print("Reset clicked")
-        partySizeStepper.value = 0
+        partySizeStepper.value = 1
         partySizeLabel.text = String(Int(partySizeStepper.value))
         
     }
@@ -55,12 +71,22 @@ class ViewController: UIViewController {
     
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
-        
+        let partySize = Double(partySizeLabel.text!) ?? 0
+        let tipSplit: Double = tip  / partySize
+
         // update tip & total labels
 //        tipLabel.text = "$\(tip)"
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
 //        totalLabel.text = "$\(total)"
+        tipSplitLabel.text = String(format: "$%.2f", tipSplit)
+    }
+    
+    @IBAction func partySizeChanged(_ sender: UIStepper) {
+        print("Stepper clicked")
+        print(sender.value)
+        partySizeLabel.text = String(Int(sender.value))
+        calculateTip(sender)
     }
     
     
