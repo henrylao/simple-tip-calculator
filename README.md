@@ -4,7 +4,7 @@
 
 Submitted by: **Henry Lao**
 
-Time spent: **3** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [ ] Add support for dark mode
-* [ ] Add support party size configuration and resetting
+* [x] Add support party size configuration and resetting
 * [ ] Add support for default tip percentage configuration
 * [x] Add support for resetting all fields and labels
 
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/henrylao/simple-tip-calculator/blob/main/Docs/simple-tip-calculator-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
