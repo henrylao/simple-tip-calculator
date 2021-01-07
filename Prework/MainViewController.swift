@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
@@ -25,11 +25,12 @@ class ViewController: UIViewController {
 
     @IBAction func resetAllFields(_ sender: Any) {
         resetPartySize(sender);
-        billField.text = String(format: "%.2f", 0.00)
+//        billField.text = String(format: "%.2f", 0.00)
+        billField.text = ""
         let bill = Double(0)
         let tip = Double(0)
         let total = bill + tip
-        let partySize = Double(partySizeLabel.text!) ?? 0
+        let partySize = Double(1)
         let tipSplit: Double = tip  / partySize
 
         // reset all text fields and labels
@@ -80,7 +81,7 @@ class ViewController: UIViewController {
     
     @IBAction func partySizeChanged(_ sender: UIStepper) {
         print("Stepper clicked")
-        print(sender.value)
+//        print(sender.value)
         partySizeLabel.text = String(Int(sender.value))
         calculateTip(sender)
     }
@@ -94,6 +95,9 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+//        [billField becomeFirstResponder];
+        billField.becomeFirstResponder()
+
         print("view did appear")
     }
 
