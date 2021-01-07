@@ -27,6 +27,7 @@ class MainViewController: UIViewController {
         resetPartySize(sender);
 //        billField.text = String(format: "%.2f", 0.00)
         billField.text = ""
+        tipControl.selectedSegmentIndex = 0
         let bill = Double(0)
         let tip = Double(0)
         let total = bill + tip
